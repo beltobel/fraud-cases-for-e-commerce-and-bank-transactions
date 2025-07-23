@@ -61,3 +61,51 @@ Noted potential outliers in purchase_value and age for Fraud_Data.csv.
 **Environment:**
 
 Python libraries: pandas (2.2.3), numpy (2.2.0), scikit-learn (1.6.0), imblearn (0.13.0), matplotlib (3.9.3), seaborn (0.13.2).
+
+
+## Model Training:
+
+Trained a Random Forest Classifier (n_estimators=100, class_weight='balanced', random_state=42) on both datasets.
+
+### Evaluation:
+
+
+
+
+
+**Metrics**: AUC-PR, F1-score, confusion matrix, and classification report.
+
+**Results**:
+
+
+**Fraud_Data.csv:**
+
+AUC-PR: 0.9270
+
+F1-score: 0.8714
+
+Confusion Matrix: [[26386, 1006], [4348, 18132]]
+
+Accuracy: 0.89
+
+**Classification Report:** Class 0 (Precision: 0.86, Recall: 0.96, F1: 0.91); Class 1 (Precision: 0.95, Recall: 0.81, F1: 0.87).
+
+**creditcard.csv:**
+
+AUC-PR: 0.0029
+
+F1-score: 0.0000
+
+Confusion Matrix: [[56644, 4], [98, 0]]
+
+Accuracy: 1.00 (due to extreme imbalance)
+
+**Classification Report**: Class 0 (Precision: 1.00, Recall: 1.00, F1: 1.00); Class 1 (Precision: 0.00, Recall: 0.00, F1: 0.00).
+
+**Files**
+
+eda.ipynb: handles EDA
+
+preprocess_for_fraud_model_training.py: Handles data loading, cleaning, feature engineering, and preprocessing.
+
+fraud_model_training.ipynb: Implements model training and evaluation.
