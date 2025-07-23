@@ -1,1 +1,13 @@
-data/
+data/preprocessed/creditcard_preprocessed.csv
+data/preprocessed/Fraud_Data_preprocessed.csv
+data/processed/creditcard_X_scaled.npy
+data/processed/creditcard_y.npy
+data/processed/Fraud_Data_X_test_scaled.npy
+data/processed/Fraud_Data_X_train_smote_scaled.npy
+data/processed/Fraud_Data_y_test.npy
+data/processed/Fraud_Data_y_train.npy
+data/processed/Fraud_Data_y_train_smote.npy
+data/creditcard.csv
+data/Fraud_Data.csv
+data/IpAddress_to_Country.csv
+data/creditcard.csv.zip 
