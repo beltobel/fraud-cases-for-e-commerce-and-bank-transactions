@@ -1,4 +1,4 @@
-# Fraud Detection Data Preprocessing and EDA
+# detection of fraud cases for e-commerce and bank transactions
 
 ## Overview
 
