@@ -1,4 +1,4 @@
-# detection of fraud cases for e-commerce and bank transactions
+# Detection of fraud cases for e-commerce and bank transactions
 
 ## Overview
 
