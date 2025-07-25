@@ -102,10 +102,30 @@ Accuracy: 1.00 (due to extreme imbalance)
 
 **Classification Report**: Class 0 (Precision: 1.00, Recall: 1.00, F1: 1.00); Class 1 (Precision: 0.00, Recall: 0.00, F1: 0.00).
 
-**Files**
+
+## SHAP Analysis:
+
+**SHAP Explainer:** A TreeExplainer was created for the Random Forest model to compute SHAP values for the test set (X_test_credit).
+
+**Summary Plots:**
+
+A bar plot was generated to display global feature importance for the fraud class (Class 1), highlighting the influence of PCA-transformed features (V1--V28), Time, and Amount on fraud predictions.
+
+A detailed summary plot visualized the magnitude and direction (positive or negative) of each feature’s impact on fraud predictions.
+
+**Force Plot:** A force plot was created for a single test sample (index 0) to provide a local explanation, illustrating how feature values contribute to the model’s prediction for that instance.
+**Feature Importance**: SHAP analysis identified the most influential features (e.g., V1--V28, Time, Amount) for fraud predictions in creditcard.csv, with summary plots showing their relative impact.
+
+**Local Explanations**: The force plot for a single test sample (index 0) provided a detailed breakdown of how feature values contributed to the model’s prediction, enhancing transparency.
+
+**Model Interpretability**: SHAP analysis improved understanding of the Random Forest model’s decision-making process, enabling stakeholders to trust and validate predictions.
+
+### **Files**
 
 eda.ipynb: handles EDA
 
 preprocess_for_fraud_model_training.py: Handles data loading, cleaning, feature engineering, and preprocessing.
 
 fraud_model_training.ipynb: Implements model training and evaluation.
+
+model_explainability.ipynb: Jupyter notebook implementing SHAP analysis for the Random Forest model on creditcard.csv.
